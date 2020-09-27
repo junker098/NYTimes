@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B10D05B25140FB20081DAAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10D05A25140FB20081DAAF /* AppDelegate.swift */; };
+		5B10D05D25140FB20081DAAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10D05C25140FB20081DAAF /* SceneDelegate.swift */; };
+		5B10D06225140FB20081DAAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B10D06025140FB20081DAAF /* Main.storyboard */; };
+		5B10D06425140FB40081DAAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B10D06325140FB40081DAAF /* Assets.xcassets */; };
+		5B10D06725140FB40081DAAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B10D06525140FB40081DAAF /* LaunchScreen.storyboard */; };
+		5B10D06F251415810081DAAF /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10D06E251415810081DAAF /* ArticleViewController.swift */; };
+		5B10D078251415FE0081DAAF /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10D077251415FE0081DAAF /* FavoriteViewController.swift */; };
+		5B10D083251418140081DAAF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10D082251418140081DAAF /* DetailViewController.swift */; };
+		5B10D087251540A50081DAAF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B10D086251540A50081DAAF /* WebKit.framework */; };
+		5B10D089251540BD0081DAAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B10D088251540BD0081DAAF /* MapKit.framework */; };
+		5B10D092251546A70081DAAF /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10D090251546A70081DAAF /* ArticleTableViewCell.swift */; };
+		5B10D093251546A70081DAAF /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B10D091251546A70081DAAF /* ArticleTableViewCell.xib */; };
+		5B8ECD9225155ABE00723150 /* ListArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8ECD9125155ABE00723150 /* ListArticleModel.swift */; };
+		5B8ECD9525155BFC00723150 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8ECD9425155BFC00723150 /* NetworkManager.swift */; };
+		5B8ECD9A2516A61C00723150 /* DataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8ECD992516A61C00723150 /* DataBaseModel.swift */; };
+		5B8ECD9D2516BF6400723150 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8ECD9C2516BF6400723150 /* DataBaseHelper.swift */; };
+		5B8ECDD62519636000723150 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8ECDD52519636000723150 /* ErrorMessages.swift */; };
+		5B8ECDD8251967DF00723150 /* UIAlertController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8ECDD7251967DF00723150 /* UIAlertController + Extension.swift */; };
+		E31472828F3615B8F18C7D67 /* Pods_NYTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00D68A88DE46AB16EBD30A3 /* Pods_NYTimes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B10D05725140FB20081DAAF /* NYTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B10D05A25140FB20081DAAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B10D05C25140FB20081DAAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5B10D06125140FB20081DAAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B10D06325140FB40081DAAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B10D06625140FB40081DAAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B10D06825140FB40081DAAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B10D06E251415810081DAAF /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		5B10D077251415FE0081DAAF /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		5B10D082251418140081DAAF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5B10D086251540A50081DAAF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5B10D088251540BD0081DAAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5B10D090251546A70081DAAF /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		5B10D091251546A70081DAAF /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		5B8ECD9125155ABE00723150 /* ListArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListArticleModel.swift; sourceTree = "<group>"; };
+		5B8ECD9425155BFC00723150 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5B8ECD992516A61C00723150 /* DataBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseModel.swift; sourceTree = "<group>"; };
+		5B8ECD9C2516BF6400723150 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
+		5B8ECDD52519636000723150 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		5B8ECDD7251967DF00723150 /* UIAlertController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController + Extension.swift"; sourceTree = "<group>"; };
+		BE9B58813C92F66623410AF3 /* Pods-NYTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimes.debug.xcconfig"; path = "Target Support Files/Pods-NYTimes/Pods-NYTimes.debug.xcconfig"; sourceTree = "<group>"; };
+		C0AA3F0B0C42E7E2968FB772 /* Pods-NYTimes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimes.release.xcconfig"; path = "Target Support Files/Pods-NYTimes/Pods-NYTimes.release.xcconfig"; sourceTree = "<group>"; };
+		E00D68A88DE46AB16EBD30A3 /* Pods_NYTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B10D05425140FB20081DAAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B10D089251540BD0081DAAF /* MapKit.framework in Frameworks */,
+				5B10D087251540A50081DAAF /* WebKit.framework in Frameworks */,
+				E31472828F3615B8F18C7D67 /* Pods_NYTimes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30B12C4291EC44689F4D1D31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE9B58813C92F66623410AF3 /* Pods-NYTimes.debug.xcconfig */,
+				C0AA3F0B0C42E7E2968FB772 /* Pods-NYTimes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B10D04E25140FB20081DAAF = {
+			isa = PBXGroup;
+			children = (
+				5B10D05925140FB20081DAAF /* NYTimes */,
+				5B10D05825140FB20081DAAF /* Products */,
+				5B10D085251540A50081DAAF /* Frameworks */,
+				30B12C4291EC44689F4D1D31 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5B10D05825140FB20081DAAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B10D05725140FB20081DAAF /* NYTimes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B10D05925140FB20081DAAF /* NYTimes */ = {
+			isa = PBXGroup;
+			children = (
+				5B10D05A25140FB20081DAAF /* AppDelegate.swift */,
+				5B10D05C25140FB20081DAAF /* SceneDelegate.swift */,
+				5B10D074251415B80081DAAF /* Article ViewController */,
+				5B10D079251416040081DAAF /* Favorite */,
+				5B10D0842514181A0081DAAF /* Detail ViewController */,
+				5B8ECD9325155AC300723150 /* Article Model */,
+				5B10D09425154A3D0081DAAF /* ArticleCell */,
+				5B8ECD9B2516A63300723150 /* DataBase */,
+				5B8ECD9625155C0400723150 /* Network Manager */,
+				5B10D06025140FB20081DAAF /* Main.storyboard */,
+				5B10D06325140FB40081DAAF /* Assets.xcassets */,
+				5B10D06525140FB40081DAAF /* LaunchScreen.storyboard */,
+				5B10D06825140FB40081DAAF /* Info.plist */,
+			);
+			path = NYTimes;
+			sourceTree = "<group>";
+		};
+		5B10D074251415B80081DAAF /* Article ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5B10D06E251415810081DAAF /* ArticleViewController.swift */,
+				5B8ECDD7251967DF00723150 /* UIAlertController + Extension.swift */,
+			);
+			path = "Article ViewController";
+			sourceTree = "<group>";
+		};
+		5B10D079251416040081DAAF /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				5B10D077251415FE0081DAAF /* FavoriteViewController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		5B10D0842514181A0081DAAF /* Detail ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5B10D082251418140081DAAF /* DetailViewController.swift */,
+			);
+			path = "Detail ViewController";
+			sourceTree = "<group>";
+		};
+		5B10D085251540A50081DAAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B10D088251540BD0081DAAF /* MapKit.framework */,
+				5B10D086251540A50081DAAF /* WebKit.framework */,
+				E00D68A88DE46AB16EBD30A3 /* Pods_NYTimes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B10D09425154A3D0081DAAF /* ArticleCell */ = {
+			isa = PBXGroup;
+			children = (
+				5B10D090251546A70081DAAF /* ArticleTableViewCell.swift */,
+				5B10D091251546A70081DAAF /* ArticleTableViewCell.xib */,
+			);
+			path = ArticleCell;
+			sourceTree = "<group>";
+		};
+		5B8ECD9325155AC300723150 /* Article Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B8ECD9125155ABE00723150 /* ListArticleModel.swift */,
+			);
+			path = "Article Model";
+			sourceTree = "<group>";
+		};
+		5B8ECD9625155C0400723150 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5B8ECD9425155BFC00723150 /* NetworkManager.swift */,
+				5B8ECDD52519636000723150 /* ErrorMessages.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		5B8ECD9B2516A63300723150 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				5B8ECD992516A61C00723150 /* DataBaseModel.swift */,
+				5B8ECD9C2516BF6400723150 /* DataBaseHelper.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B10D05625140FB20081DAAF /* NYTimes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B10D06B25140FB40081DAAF /* Build configuration list for PBXNativeTarget "NYTimes" */;
+			buildPhases = (
+				AACCA006D19E2A273AB09C68 /* [CP] Check Pods Manifest.lock */,
+				5B10D05325140FB20081DAAF /* Sources */,
+				5B10D05425140FB20081DAAF /* Frameworks */,
+				5B10D05525140FB20081DAAF /* Resources */,
+				23E477DC9F14644227AA59CD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NYTimes;
+			productName = NYTimes;
+			productReference = 5B10D05725140FB20081DAAF /* NYTimes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B10D04F25140FB20081DAAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Yuri Mogorita";
+				TargetAttributes = {
+					5B10D05625140FB20081DAAF = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 5B10D05225140FB20081DAAF /* Build configuration list for PBXProject "NYTimes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B10D04E25140FB20081DAAF;
+			productRefGroup = 5B10D05825140FB20081DAAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B10D05625140FB20081DAAF /* NYTimes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B10D05525140FB20081DAAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B10D093251546A70081DAAF /* ArticleTableViewCell.xib in Resources */,
+				5B10D06725140FB40081DAAF /* LaunchScreen.storyboard in Resources */,
+				5B10D06425140FB40081DAAF /* Assets.xcassets in Resources */,
+				5B10D06225140FB20081DAAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23E477DC9F14644227AA59CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYTimes/Pods-NYTimes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYTimes/Pods-NYTimes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NYTimes/Pods-NYTimes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AACCA006D19E2A273AB09C68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYTimes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B10D05325140FB20081DAAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B10D083251418140081DAAF /* DetailViewController.swift in Sources */,
+				5B10D05B25140FB20081DAAF /* AppDelegate.swift in Sources */,
+				5B8ECD9525155BFC00723150 /* NetworkManager.swift in Sources */,
+				5B8ECD9D2516BF6400723150 /* DataBaseHelper.swift in Sources */,
+				5B10D06F251415810081DAAF /* ArticleViewController.swift in Sources */,
+				5B8ECD9A2516A61C00723150 /* DataBaseModel.swift in Sources */,
+				5B8ECDD62519636000723150 /* ErrorMessages.swift in Sources */,
+				5B8ECD9225155ABE00723150 /* ListArticleModel.swift in Sources */,
+				5B8ECDD8251967DF00723150 /* UIAlertController + Extension.swift in Sources */,
+				5B10D092251546A70081DAAF /* ArticleTableViewCell.swift in Sources */,
+				5B10D078251415FE0081DAAF /* FavoriteViewController.swift in Sources */,
+				5B10D05D25140FB20081DAAF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B10D06025140FB20081DAAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B10D06125140FB20081DAAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B10D06525140FB40081DAAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B10D06625140FB40081DAAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B10D06925140FB40081DAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B10D06A25140FB40081DAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B10D06C25140FB40081DAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE9B58813C92F66623410AF3 /* Pods-NYTimes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J8W8ZZGT2;
+				INFOPLIST_FILE = NYTimes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jr.company.NYTimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B10D06D25140FB40081DAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AA3F0B0C42E7E2968FB772 /* Pods-NYTimes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J8W8ZZGT2;
+				INFOPLIST_FILE = NYTimes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jr.company.NYTimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B10D05225140FB20081DAAF /* Build configuration list for PBXProject "NYTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B10D06925140FB40081DAAF /* Debug */,
+				5B10D06A25140FB40081DAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B10D06B25140FB40081DAAF /* Build configuration list for PBXNativeTarget "NYTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B10D06C25140FB40081DAAF /* Debug */,
+				5B10D06D25140FB40081DAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B10D04F25140FB20081DAAF /* Project object */;
+}

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g18-Om-Ape">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Most emailed-->
+        <scene sceneID="61b-kK-Wfb">
+            <objects>
+                <viewController id="bH3-WF-e7A" customClass="ArticleViewController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWF-bu-r4L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="ZjJ-hk-jnc">
+                                <rect key="frame" x="0.0" y="438" width="414" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TSt-HX-Tu4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleTableViewCell" id="ozh-zm-s6K" customClass="ArticleTableViewCell" customModule="NYTimes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ozh-zm-s6K" id="Eyc-uG-uNC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pnj-0b-znf" kind="show" trigger="accessoryAction" id="v2K-DW-zxa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bH3-WF-e7A" id="JVC-r5-Yyd"/>
+                                    <outlet property="delegate" destination="bH3-WF-e7A" id="PYX-wa-C84"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="AXj-rM-MNA">
+                                <rect key="frame" x="197" y="440.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AXj-rM-MNA" firstAttribute="centerY" secondItem="Gy8-MZ-Mwd" secondAttribute="centerY" id="C8K-OE-O7d"/>
+                            <constraint firstItem="Gy8-MZ-Mwd" firstAttribute="bottom" secondItem="TSt-HX-Tu4" secondAttribute="bottom" id="CM5-ZE-dzf"/>
+                            <constraint firstItem="TSt-HX-Tu4" firstAttribute="leading" secondItem="Gy8-MZ-Mwd" secondAttribute="leading" id="IaP-68-K83"/>
+                            <constraint firstItem="AXj-rM-MNA" firstAttribute="centerX" secondItem="Gy8-MZ-Mwd" secondAttribute="centerX" id="k2b-m7-YRr"/>
+                            <constraint firstItem="TSt-HX-Tu4" firstAttribute="top" secondItem="Gy8-MZ-Mwd" secondAttribute="top" id="q6X-vX-xgw"/>
+                            <constraint firstItem="Gy8-MZ-Mwd" firstAttribute="trailing" secondItem="TSt-HX-Tu4" secondAttribute="trailing" id="wtL-cw-1df"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gy8-MZ-Mwd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Most emailed" id="Hza-lb-DRk"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="AXj-rM-MNA" id="YLr-yS-0rv"/>
+                        <outlet property="tableView" destination="TSt-HX-Tu4" id="ZNR-JE-ffc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3b-gV-FvA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="-1231.4732142857142"/>
+        </scene>
+        <!--Most shared-->
+        <scene sceneID="M6F-ds-mfn">
+            <objects>
+                <viewController id="HWe-sN-feu" customClass="ArticleViewController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hwd-bU-JhA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0cV-ua-OX3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleTableViewCell" id="zYv-vs-qd8" customClass="ArticleTableViewCell" customModule="NYTimes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zYv-vs-qd8" id="bb4-hE-XG8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pnj-0b-znf" kind="show" id="KMf-X5-h1d"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HWe-sN-feu" id="ker-bc-XCT"/>
+                                    <outlet property="delegate" destination="HWe-sN-feu" id="Fb2-G9-xdX"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="kHE-M6-sbs">
+                                <rect key="frame" x="197" y="440.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WFn-Bb-poz" firstAttribute="bottom" secondItem="0cV-ua-OX3" secondAttribute="bottom" id="4sk-hh-N5y"/>
+                            <constraint firstItem="0cV-ua-OX3" firstAttribute="leading" secondItem="WFn-Bb-poz" secondAttribute="leading" id="Frl-Dz-T4d"/>
+                            <constraint firstItem="kHE-M6-sbs" firstAttribute="centerY" secondItem="WFn-Bb-poz" secondAttribute="centerY" id="TvV-fA-8j0"/>
+                            <constraint firstItem="WFn-Bb-poz" firstAttribute="trailing" secondItem="0cV-ua-OX3" secondAttribute="trailing" id="dR4-fz-Z33"/>
+                            <constraint firstItem="kHE-M6-sbs" firstAttribute="centerX" secondItem="WFn-Bb-poz" secondAttribute="centerX" id="kcT-wP-x9L"/>
+                            <constraint firstItem="0cV-ua-OX3" firstAttribute="top" secondItem="WFn-Bb-poz" secondAttribute="top" id="tZ4-JE-yFZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WFn-Bb-poz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Most shared" id="Q4R-VS-Smy"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="kHE-M6-sbs" id="rno-zf-M4Z"/>
+                        <outlet property="tableView" destination="0cV-ua-OX3" id="pYd-bz-eDV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mDa-ZM-rKU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="-568.52678571428567"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hzS-UQ-PzR">
+            <objects>
+                <viewController storyboardIdentifier="detailVC" id="pnj-0b-znf" customClass="DetailViewController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mAd-IP-gPs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCA-Zo-gJC">
+                                <rect key="frame" x="0.0" y="90" width="414" height="723"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JZN-T4-vez">
+                                <rect key="frame" x="0.0" y="88" width="414" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mc3-i9-Vzn" firstAttribute="trailing" secondItem="oCA-Zo-gJC" secondAttribute="trailing" id="8Pb-gC-5Lq"/>
+                            <constraint firstItem="oCA-Zo-gJC" firstAttribute="leading" secondItem="Mc3-i9-Vzn" secondAttribute="leading" id="JpC-n9-rMs"/>
+                            <constraint firstItem="JZN-T4-vez" firstAttribute="top" secondItem="Mc3-i9-Vzn" secondAttribute="top" id="fbi-V0-8JE"/>
+                            <constraint firstItem="Mc3-i9-Vzn" firstAttribute="bottom" secondItem="oCA-Zo-gJC" secondAttribute="bottom" id="hxr-Hh-iFI"/>
+                            <constraint firstAttribute="trailing" secondItem="JZN-T4-vez" secondAttribute="trailing" id="rXw-EP-cky"/>
+                            <constraint firstItem="oCA-Zo-gJC" firstAttribute="top" secondItem="JZN-T4-vez" secondAttribute="bottom" id="tfx-F2-lOf"/>
+                            <constraint firstItem="JZN-T4-vez" firstAttribute="leading" secondItem="mAd-IP-gPs" secondAttribute="leading" id="z5O-sx-IET"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mc3-i9-Vzn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pTL-3x-GT6">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="star.fill" catalog="system" id="9SC-ps-iT9">
+                            <connections>
+                                <action selector="saveDataInFavorite:" destination="pnj-0b-znf" id="2Xi-4n-IJi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="progressView" destination="JZN-T4-vez" id="MOT-TJ-MJW"/>
+                        <outlet property="webView" destination="oCA-Zo-gJC" id="AZQ-JB-MeF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdC-CF-mk2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2290" y="-336"/>
+        </scene>
+        <!--Most viewed-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ArticleViewController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zxE-av-1gV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleTableViewCell" id="j4a-br-pJT" customClass="ArticleTableViewCell" customModule="NYTimes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j4a-br-pJT" id="4Tq-Q5-UFp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pnj-0b-znf" kind="show" id="t4K-Kf-1V6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zgG-18-VXU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="S7d-TL-0fp"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ZPD-fX-OHs">
+                                <rect key="frame" x="197" y="440.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zxE-av-1gV" secondAttribute="bottom" id="AlJ-kN-3z0"/>
+                            <constraint firstItem="zxE-av-1gV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="D5A-Es-eif"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zxE-av-1gV" secondAttribute="trailing" id="ZaC-a3-np6"/>
+                            <constraint firstItem="ZPD-fX-OHs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bD0-aH-FA5"/>
+                            <constraint firstItem="ZPD-fX-OHs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lgC-AX-lPG"/>
+                            <constraint firstItem="zxE-av-1gV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u4w-1i-0Lf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Most viewed" id="RvG-Ov-ve2"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ZPD-fX-OHs" id="IGD-YM-zCE"/>
+                        <outlet property="tableView" destination="zxE-av-1gV" id="pHP-z8-ZPQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
+        </scene>
+        <!--Favorite list-->
+        <scene sceneID="TLx-OP-J9T">
+            <objects>
+                <viewController id="NBT-0e-Yot" customClass="FavoriteViewController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sdr-5F-kyw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6JR-0L-Rhz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleTableViewCell" id="m6J-Y9-mZC" customClass="ArticleTableViewCell" customModule="NYTimes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m6J-Y9-mZC" id="Cli-PH-RKB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pnj-0b-znf" kind="show" id="tQK-8e-V6v"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NBT-0e-Yot" id="SuH-OM-lIF"/>
+                                    <outlet property="delegate" destination="NBT-0e-Yot" id="2k3-Kw-Rfr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6JR-0L-Rhz" firstAttribute="top" secondItem="9bC-cQ-mE2" secondAttribute="top" id="BYU-Go-RaZ"/>
+                            <constraint firstItem="9bC-cQ-mE2" firstAttribute="trailing" secondItem="6JR-0L-Rhz" secondAttribute="trailing" id="YKM-8W-IAW"/>
+                            <constraint firstItem="6JR-0L-Rhz" firstAttribute="leading" secondItem="9bC-cQ-mE2" secondAttribute="leading" id="ZCT-o8-642"/>
+                            <constraint firstItem="9bC-cQ-mE2" firstAttribute="bottom" secondItem="6JR-0L-Rhz" secondAttribute="bottom" id="ysv-b0-Tgf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9bC-cQ-mE2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Favorite list" id="CF8-Ks-iKd"/>
+                    <connections>
+                        <outlet property="tableView" destination="6JR-0L-Rhz" id="iFy-AT-z5n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TG0-T3-Fm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="940"/>
+        </scene>
+        <!--Application Tabbar Controller-->
+        <scene sceneID="C3c-Pp-VvM">
+            <objects>
+                <tabBarController id="g18-Om-Ape" customClass="ApplicationTabbarController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qtC-D3-o2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aOA-ga-aUs" kind="relationship" relationship="viewControllers" id="8Md-80-hdg"/>
+                        <segue destination="1yB-iA-an1" kind="relationship" relationship="viewControllers" id="QJZ-dr-Blo"/>
+                        <segue destination="b3P-XR-Qs0" kind="relationship" relationship="viewControllers" id="LlD-ea-XBw"/>
+                        <segue destination="HcC-Xv-er7" kind="relationship" relationship="viewControllers" id="rEY-Vh-EX8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F36-IR-dDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1057" y="-336"/>
+        </scene>
+        <!--Most Viewed-->
+        <scene sceneID="f7J-fF-Y5g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b3P-XR-Qs0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Most Viewed" image="eye.fill" catalog="system" id="mMM-Jm-ydt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BSw-6n-M8a">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gWu-ay-uJX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVO-lu-cdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--Most Shared-->
+        <scene sceneID="e8D-J5-aBl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1yB-iA-an1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Most Shared" image="circle.grid.hex.fill" catalog="system" id="32I-v1-Dsi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PQD-b3-IhQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HWe-sN-feu" kind="relationship" relationship="rootViewController" id="LfW-o6-gam"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3W-QZ-30B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="-568.52678571428567"/>
+        </scene>
+        <!--Most emailed-->
+        <scene sceneID="9uJ-vf-jge">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aOA-ga-aUs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Most emailed" image="doc.fill" catalog="system" landscapeImage="globe" id="LSH-xb-FE5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wlT-Cj-n11">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bH3-WF-e7A" kind="relationship" relationship="rootViewController" id="x4W-5u-eno"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ko0-Ve-y6m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="-1231.4732142857142"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="N4P-5s-FDE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HcC-Xv-er7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorite" image="star.fill" catalog="system" id="ZIt-Wy-2sf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vuO-py-t9f">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NBT-0e-Yot" kind="relationship" relationship="rootViewController" id="YgX-0V-fWo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DR9-DJ-2Pm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="940"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="v2K-DW-zxa"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="circle.grid.hex.fill" catalog="system" width="128" height="112"/>
+        <image name="doc.fill" catalog="system" width="115" height="128"/>
+        <image name="eye.fill" catalog="system" width="128" height="78"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
